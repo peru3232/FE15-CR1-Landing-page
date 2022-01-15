@@ -2,7 +2,6 @@
 body {
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
-    /* letter-spacing: 1px; */
     background: #1A1818;
 }
 
@@ -15,7 +14,6 @@ nav {
     z-index: 1;
     height: 85px;
 }
-
 nav .button {
     background: #8C181B;
     font-weight: bold;
@@ -25,18 +23,16 @@ nav .button {
     border-radius: 15px;
     
 }
+nav li {
+    list-style-type: none;
+    float: left;
+}
 
 #searchbar {
     width: 960px;
     height: 40px;
     padding: 15px 30px;
     margin: 0px 15px 0px 120px;
-
-}
-
-nav li {
-    list-style-type: none;
-    float: left;
 }
 
 header {
@@ -62,9 +58,9 @@ section {
 }
 
 article {
-    height: 234px;
-    /* width: 30%; */
+    /* width: 33%; */
     width: 381px;
+    height: 234px;
     float: left;
     background: #235A8D;
     border-radius: 15px;
@@ -72,7 +68,6 @@ article {
     letter-spacing: 1px;
     text-align: center;
 }
-
 article button {
     position: absolute;
     bottom: 35px;
@@ -85,20 +80,12 @@ article button {
     padding-right: 140px;
 }
 
-form {
-    position: absolute;
-    bottom: 35px;
-    padding-left: 10%;
-
-}
-
 .overlayContent {
     line-height: .5;
     position: relative;
     left: 317px;
     top: 185px;
 }
-
 .overlayContent h1{
     font-size: 40px;
 }
@@ -115,7 +102,6 @@ form {
 .main-topic {
     text-align: center;
 }
-
 .main-topic ul {
     list-style-type: none;
     font-size: 19px;
@@ -124,13 +110,11 @@ form {
     right: 20px;
     margin: 0px;
 }
-
 .main-topic h1 {
     text-shadow: 4px 4px 2px gray;
     line-height: 0.8;
     font-size: 60px;
 }
-
 .main-topic h2 {
     border-bottom: 2px solid rgb(252, 252, 252);
     font-size: 30px;
@@ -139,10 +123,9 @@ form {
     margin: 25px 35px 10px;   
 }
 
-.impressum, .contact {
+.impressum, .j4f {
     font-size: 22px;
     letter-spacing: 1px ;
-
 }
 
 footer {
@@ -157,10 +140,19 @@ footer {
     bottom: 0;
     left: 0;
 }
-
 footer i {
     font-size: medium;
     letter-spacing: 0;
+}
+footer ul {
+    position: absolute;
+    bottom: 0;
+}
+footer li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+
 }
 
 .backgroundPic {
@@ -176,10 +168,4 @@ a:link, a:visited {
 a:hover {
     color: #15bfdd;
     text-decoration: none;
-}
-
-form {
-    position: relative;
-    top: 10px;
-    right: 100px;   
 }
