@@ -1,83 +1,119 @@
-
 body {
-    color: whitesmoke;
+    background-color: #1A1818;
     font-family: Arial, Helvetica, sans-serif;
-    background: #1A1818;
+    color: whitesmoke;
+}
+
+.page {
+    width: 1600px;
+    height: 2000;
+    /* display: flex; */
 }
 
 nav {
     background-color: black;
+    height: 95px;
     width: 100%;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     z-index: 1;
-    height: 85px;
-}
-nav .button {
-    background: #8C181B;
-    font-weight: bold;
-    padding: 15px 25px;
-    margin: -5px 15px;
-    text-align: center;
-    border-radius: 15px;
-    
-}
-nav li {
-    list-style-type: none;
-    float: left;
 }
 
-#searchbar {
-    width: 960px;
+.navBtn {
+    background: #8C181B;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px / 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: left;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    margin-left: -35px;
+}
+
+nav li {
+    margin-inline: 17px;
+}
+
+.navSearch {
+    display: flex;
+    flex-shrink: 2;
+    width: 965px;
     height: 40px;
-    padding: 15px 30px;
-    margin: 0px 15px 0px 120px;
+    min-width: 200px;
+    margin-top: 7px;
+}
+
+.flexInput {
+    width: 100%;
+}
+
+.navEmpty {
+    width: 70px;
 }
 
 header {
     position: absolute;
-    top: 85px;
+    top: 90px;
     left: 0;
-    height: 368px;
+    height: 370px;
+    /* display: flex; */
+    width: 100%;
+}
+
+.backgroundPic {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+header img { 
+    width: 100%;
+    max-width: 1600px;
 }
 
 main {
     position: absolute;
-    top: 453px;
-    left: 0;
+    top: 440px;
     width: 100%;
-    height: 590px;
 }
 
 section {
-    /* width: 80%; */
-    width: 1270px;
-    position: absolute;
+    width: 80%;
+    position: relative;
     left: 10%;
 }
 
 article {
-    /* width: 33%; */
-    width: 381px;
+    width: 30%;
+    min-width: 222px;
     height: 234px;
     float: left;
     background: #235A8D;
     border-radius: 15px;
-    margin: 20px;
+    margin: 1.51%;
     letter-spacing: 1px;
-    text-align: center;
 }
+
 article button {
     position: absolute;
     bottom: 35px;
     font-size: 16px;
     padding: 8px;
+    min-width: 145px;
 }
 
-.btnCenter {
-    text-align: center;
-    padding-right: 140px;
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlayContent {
@@ -86,12 +122,15 @@ article button {
     left: 317px;
     top: 185px;
 }
-.overlayContent h1{
+
+.overlayContent h1 {
     font-size: 40px;
 }
+
 .overlayContent p {
     font-size: 20px;
 }
+
 .overlayContent img {
     width: 138px;
     height: 93px;
@@ -101,7 +140,9 @@ article button {
 
 .main-topic {
     text-align: center;
+    display: flex;
 }
+
 .main-topic ul {
     list-style-type: none;
     font-size: 19px;
@@ -110,17 +151,22 @@ article button {
     right: 20px;
     margin: 0px;
 }
-.main-topic h1 {
+
+main h1 {
     text-shadow: 4px 4px 2px gray;
-    line-height: 0.8;
+    line-height: 1;
     font-size: 60px;
+    text-align: center;
+    min-width: 720px;
+    width: 100%;
 }
+
 .main-topic h2 {
-    border-bottom: 2px solid rgb(252, 252, 252);
+    border-bottom: 2px outset rgb(252, 252, 252);
     font-size: 30px;
     line-height: 0.5;
     padding-bottom: 25px;
-    margin: 25px 35px 10px;   
+    margin: 25px 35px 10px;
 }
 
 .impressum, .j4f {
@@ -140,31 +186,28 @@ footer {
     bottom: 0;
     left: 0;
 }
+
 footer i {
     font-size: medium;
     letter-spacing: 0;
 }
+
 footer ul {
     position: absolute;
     bottom: 0;
 }
+
 footer li {
     list-style-type: none;
     float: left;
     margin-right: 20px;
-
-}
-
-.backgroundPic {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
 }
 
 a:link, a:visited {
-    color:rgb(203, 240, 252);
+    color: rgb(203, 240, 252);
     text-decoration: none;
 }
+
 a:hover {
     color: #15bfdd;
     text-decoration: none;
