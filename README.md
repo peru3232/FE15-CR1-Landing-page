@@ -1,12 +1,11 @@
-# FE22-CR01-Peter
+# Landing Page
 
-Simply plain HTML and CSS used
+This project consists of a landing page and additional pages. Plain HTML and CSS were used.
 
+To view the pages simply clone this repo then open index.html in your browser.
 
-index.html is the landing page
+This project was done as a solution on my first end of the week project during my fullstack course at code factory.
 
-logos are linked as home buttons
+Please view the assignment.pdf to view the expected results.
 
-2 additional pages are linked on footer, also 1 extra page linked to the buttons on the navbar
-
-author linked as well to this github profile too
+Cheers!
